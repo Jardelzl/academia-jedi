@@ -1,0 +1,15 @@
+<div *ngIf="estudante">
+  <h2>Detalhes do Estudante {{estudante.nome | uppercase}}</h2>
+    <div>
+      <label>Id: 
+        <input [(ngModel)]= "estudante.id" placeholders= "Id">
+      </label>
+      <label> Nome: 
+          <input [(ngModel)]= "estudante.nome" placeholders= "Nome">
+      </label>
+      <label> Jedi: 
+          <input [(ngModel)]= "estudante.isJedi" placeholders= "Jedi">
+      </label>
+    </div>
+</div>
+
